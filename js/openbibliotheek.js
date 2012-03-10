@@ -11,16 +11,31 @@ var urls =
 
 // Window loaded
 window.onload = function(){
-
 	// if url contains for example #bladmuziek
 	if (self.document.location.hash) {
 		// change typeButton and type to #bladmuziek
 		$(self.document.location.hash).click();
+		if(urls[type]){
+			$("#zoek").click();
+		}
 	}else{
-		console.log('welcome');
+		$("#zoek").click();
 		$("#boeken").click();	
 	}
 }
+
+$(".nav a").click(
+		function(){
+			console.log($(this).attr('href'));
+			$('.container').hide();
+			$($(this).attr('href')+"page").show();
+			$(".active").removeClass('active')
+			$(this).parent().addClass("active");
+			if ($(this).attr('href') === "#bronnen"){
+			$("#bronnenpagecont").replaceWith('<iframe src="https://docs.google.com/spreadsheet/pub?key=0ArdlRjWJ9bPTdE0wcXExTEQyYk1RaG5zdHNSMlloYlE&output=html" width="100%" height="300px"></iframe>');	
+			}
+
+});
 
 // If dropdownmenu option is selected
 $(".dropdown-menu a").click(

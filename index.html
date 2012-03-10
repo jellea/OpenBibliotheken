@@ -15,7 +15,6 @@
 				background: url("img/85441961_d4e6d4842a_o.jpg");
 				background-attachment:fixed;
 				background-position:right center; 
-				
 			}
 			#photocaption{
 				position: absolute;
@@ -24,6 +23,9 @@
 				height:auto;
 				right:50px;
 				bottom: 30px;
+			}
+			.container{
+				display:none;
 			}
     </style>
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -40,7 +42,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   </head>
 
-  <body>
+	<body>
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -53,24 +55,21 @@
           <a class="brand" href="#">OpenBibliotheken</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Zoek</a></li>
-              <li><a href="#about">Manifest</a></li>
-              <li><a href="#contact">Achtergrond info</a></li>
+              <li><a href="#zoek" id="zoek">Zoek</a></li>
+							<li><a href="#manifest" id="manifest">Manifest</a></li>
+							<li><a href="#bronnen" id="bronnen">Bronnen</a></li>
+              <li><a href="#achtergrondinfo" id="achtergrondinfo">Achtergrond info</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div class="container">
+		<div class="container" id="zoekpage">
 			<div class="row">
-				<div class="span8 offset2">
-					<div class="hero-unit">
-						<h1>OpenBibliotheken</h1>
+				<div class="span6 offset3 well">
 						<p>
-						Manifest hier
-						</p>
-								<form class="form-inline">
+								<form class="form-inline btn-toolbar">
 									<div class="btn-group" style="display:inline">
 										<a class="btn btn-primary" id="typeButton" href="#"><i class="icon-book icon-white"></i> Boeken</a>
 										<a class="btn dropdown-toggle btn-primary" data-toggle="dropdown" href="#">
@@ -89,10 +88,45 @@
 										<button type="submit" id="searchButton" class="btn">Zoek!</button>								
 									</div>
 								</form>
-					</div>
+								</p>
 				</div>
 			</div>
 		</div> <!-- /container -->
+
+		<div class="container" id="manifestpage">
+			<div class="row">
+				<div class="span6 offset3 well">
+					<h1>OpenBibliotheken</h1>
+						<p>
+						De vrijheid van het internet staat onder druk. Daarmee staat ook de beschikbaarheid van content niet vast: het (her)gebruiken van auteursrechtelijk beschermd materiaal wordt de consument steeds lastiger gemaakt. Daarnaast wordt ook aan het publieke domein getornd, onder meer door de verlenging van de termijn van naburige rechten op geluidsdragers met 20 jaar.</p>
+
+						<p>Deze ontwikkelingen stellen openbare bibliotheken voor een dilemma. Willigen zij de eisen van de uitgevers in en wordt daarmee gekozen voor een gereguleerd internet, of staan zij pal voor netneutraliteit en daarmee voor vrije toegang tot informatie? OpenBibliotheken.nl wil op kleine schaal een voorbeeld stellen en laten zien hoe je die vrije toegang zou kunnen garanderen. </p>
+
+						<p>Daarbij benadrukken we dat een eerlijke prijs voor contentmakers ons na aan het hart ligt. OpenBibliotheken is een voorbeeldsite en wil gebruikers niet aanzetten tot onrechtmatig gebruik van content.</p>
+						</p>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="container" id="achtergrondinfopage">
+			<div class="row">
+				<div class="span6 offset3 well">
+					Wie, Wat, Waar
+					Technische uitleg
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="bronnenpage">
+			<div class="row">
+				<div class="span8 offset2 well">
+					<p><a href="https://docs.google.com/spreadsheet/ccc?key=0ArdlRjWJ9bPTdE0wcXExTEQyYk1RaG5zdHNSMlloYlE">toevoegen</a></p>
+					<div id="bronnenpagecont"></div>
+				</div>
+			</div>
+		</div>
+
 
 		<div id="photocaption">
 			<p><a href="http://www.flickr.com/photos/thomashawk/85441961/">Photo</a>
