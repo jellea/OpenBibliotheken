@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Jelle Akkerman">
+		<link id="page_favicon" href="/favicon.ico" rel="icon" type="image/x-icon" />
 
     <!-- Le styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,11 +25,20 @@
 				right:50px;
 				bottom: 30px;
 			}
+			#sharebuttons{
+				position: absolute;
+				display: inline-block;
+				width:auto;
+				height:auto;
+				left:50px;
+				bottom: 30px;
+			}
+
 			.container{
 				display:none;
 			}
 			#zoekpage{
-				max-width: 530px;
+				max-width: 535px;
 			}
 			#logo{
 				text-align:center;
@@ -79,7 +89,7 @@
 				<div class="well">
 						<p>
 								<form class="form-inline btn-toolbar">
-									<div class="btn-group" style="display:inline">
+									<div class="btn-group" style="vertical-align:middle; width:133px">
 										<a class="btn btn-primary" id="typeButton" href="#"><i class="icon-book icon-white"></i> Boeken</a>
 										<a class="btn dropdown-toggle btn-primary" data-toggle="dropdown" href="#">
 											<span class="caret"></span>
@@ -94,7 +104,7 @@
 										</ul>
 										</div>
 										<input type="text" id="searchField" class="input-large span3 search-query">
-										<button type="submit" id="searchButton" class="btn">Zoek!</button>								
+										<button type="submit" id="searchButton" class="btn pull-right">Zoek!</button>								
 									</div>
 								</form>
 								</p>
@@ -142,7 +152,18 @@
 			by <a href="http://www.flickr.com/photos/thomashawk/">Thomas Hawk</a>
 			under a <a href="http://creativecommons.org/licenses/by-nc/2.0/deed.en">Creative Commons</a> license</P>
 		</div>
-		
+		<div id="sharebuttons">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+				<a class="addthis_counter addthis_pill_style"></a>
+				</div>
+				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f5e8a2774027adb"></script>
+				<!-- AddThis Button END -->
+			
+		</div>
 
     <!-- Le javascript
     ================================================== -->

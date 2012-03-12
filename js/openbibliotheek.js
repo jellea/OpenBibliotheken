@@ -25,16 +25,15 @@ window.onload = function(){
 }
 
 $(".nav a").click(
-		function(){
-			console.log($(this).attr('href'));
-			$('.container').hide();
-			$($(this).attr('href')+"page").show();
-			$(".active").removeClass('active')
-			$(this).parent().addClass("active");
-			if ($(this).attr('href') === "#bronnen"){
-			$("#bronnenpagecont").replaceWith('<iframe src="https://docs.google.com/spreadsheet/pub?key=0ArdlRjWJ9bPTdE0wcXExTEQyYk1RaG5zdHNSMlloYlE&output=html" width="100%" height="300px"></iframe>');	
-			}
-
+	function(){
+		console.log($(this).attr('href'));
+		$('.container').hide();
+		$($(this).attr('href')+"page").show();
+		$(".active").removeClass('active');
+		$(this).parent().addClass("active");
+		if ($(this).attr('href') === "#bronnen"){
+		$("#bronnenpagecont").replaceWith("<iframe src=\"https://docs.google.com/spreadsheet/pub?key=0ArdlRjWJ9bPTdE0wcXExTEQyYk1RaG5zdHNSMlloYlE&output=html\" width=\"100%\" height=\"300px\"></iframe>");	
+		}
 });
 
 // If dropdownmenu option is selected
@@ -53,4 +52,3 @@ $("#searchButton").click(
 		var url = urls[type].url
 		window.open(url.replace("%",searchField.value),'_blank');
 	});
-
