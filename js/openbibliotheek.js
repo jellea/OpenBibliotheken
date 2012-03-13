@@ -5,7 +5,7 @@ var urls =
 	 "films":{"url":"https://thepiratebay.se/search/%/0/99/200"},
 	 "bladmuziek":{"url":"http://www.google.com/search?q=site:imslp.org+%"},
 	 "wiki":{"url":"http://nl.wikipedia.org/wiki/Special:Search?search=%"},
-	 "fotos":{"url":"http://www.flickr.com/search/?q=bla&l=cc&ct=0&mt=all&adv=1"}
+	 "fotos":{"url":"http://www.flickr.com/search/?q=%&l=cc&ct=0&mt=all&adv=1"}
 	}
 
 
@@ -24,17 +24,6 @@ window.onload = function(){
 	}
 }
 
-$(".nav a").click(
-	function(){
-		console.log($(this).attr('href'));
-		$('.container').hide();
-		$($(this).attr('href')+"page").show();
-		$(".active").removeClass('active');
-		$(this).parent().addClass("active");
-		if ($(this).attr('href') === "#bronnen"){
-		$("#bronnenpagecont").replaceWith("<iframe src=\"https://docs.google.com/spreadsheet/pub?key=0ArdlRjWJ9bPTdE0wcXExTEQyYk1RaG5zdHNSMlloYlE&output=html\" width=\"100%\" height=\"300px\"></iframe>");	
-		}
-});
 
 // If dropdownmenu option is selected
 $(".dropdown-menu a").click(
