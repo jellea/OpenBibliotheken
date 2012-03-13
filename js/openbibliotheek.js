@@ -5,7 +5,7 @@ var urls =
 	 "films":{"url":"https://thepiratebay.se/search/%/0/99/200"},
 	 "bladmuziek":{"url":"http://www.google.com/search?q=site:imslp.org+%"},
 	 "wiki":{"url":"http://nl.wikipedia.org/wiki/Special:Search?search=%"},
-	 "fotos":{"url":"http://www.flickr.com/search/?q=bla&l=cc&ct=0&mt=all&adv=1"}
+	 "fotos":{"url":"http://www.flickr.com/search/?q=%&l=cc&ct=0&mt=all&adv=1"}
 	}
 
 
@@ -49,6 +49,6 @@ $(".dropdown-menu a").click(
 $("#searchButton").click(
 	function() {
 		// Open new window with prescribed urls + the type and the input value
-		var url = urls[type].url
+		var url = urls[type].url;
 		window.open(url.replace("%",searchField.value),'_blank');
 	});
