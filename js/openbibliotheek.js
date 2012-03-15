@@ -51,5 +51,5 @@ $("#searchButton").click(
 	function() {
 		// Open new window with prescribed urls + the type and the input value
 		var url = urls[type].url;
-		window.open(url.replace("%",searchField.value),'_blank');
+		window.open(url.replace("%",$("#searchField").val()),'_blank');
 	});
