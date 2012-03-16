@@ -32,7 +32,7 @@ $(".nav a").click(
 		$(".active").removeClass('active');
 		$(this).parent().addClass("active");
 		if ($(this).attr('href') === "#bronnen"){
-		$("#bronnenpagecont").replaceWith("<iframe src=\"https://docs.google.com/spreadsheet/pub?key=0ArdlRjWJ9bPTdE0wcXExTEQyYk1RaG5zdHNSMlloYlE&output=html\" width=\"100%\" height=\"400px\"></iframe>");	
+		$("#bronnenpagecont").replaceWith("<iframe src=\"https://docs.google.com/spreadsheet/pub?key=0AsOOrkVrzWxLdF9QdGtoUy14d1ZGZWFSRUNEVDVYdXc&output=html\" width=\"100%\" height=\"400px\"></iframe>");	
 		}
 });
 
