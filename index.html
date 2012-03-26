@@ -42,14 +42,15 @@
 			#zoekpage{
 				max-width: 535px;
 			}
+			#zoekpage h1{
+				line-height: 100px;
+				margin-bottom: 10px;
+			}
 			#logo{
 				text-align:center;
 				margin-bottom: 20px;
 			}
-			#manifestfront p{
-				line-height: 22px;
-			}
-    </style>
+			    </style>
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -72,14 +73,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">OpenBibliotheken</a>
+					</a>
+					<div class="nav">
+						<a class="brand" href="#zoek">OpenBibliotheken</a>
+					</div>
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="#zoek" id="zoek">Zoek</a></li>
 							<li><a href="#manifest" id="manifest">Manifest</a></li>
 							<li><a href="#bronnen" id="bronnen">Bronnen</a></li>
-              <li><a href="#achtergrondinfo" id="achtergrondinfo">Achtergrond info</a></li>
+							<li><a href="#achtergrondinfo" id="achtergrondinfo">Achtergrondinfo</a></li>
+							<li><a href="#contact" id="contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -89,16 +93,27 @@
 		<a href="https://github.com/jellea/OpenBibliotheken" target="_black"><img style="position: absolute; top: 40px; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/4c7dc970b89fd04b81c8e221ba88ff99a06c6b61/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub"></a>
 
 		<div class="container" id="zoekpage">
-			<div id="logo">
-				<img src="img/logosmall.png" alt="OpenBibliotheken logo" width="166" height="200" style="left:50%;"/>
+			<div class="row">
+				<div id="logo" class="span2">		
+					<img src="img/logosmall.png" alt="OpenBibliotheken logo" width="166" height="200"/>
+				</div>
+				<div class="span2">
+					<h1>
+						OpenBibliotheken.nl
+					</h1>
+					<div class="nav">
+						<a href="#manifest"><button class="btn btn-large btn-primary">Lees het manifest</button></a>
+					</div>
+
+					</div>
 			</div>
-			<h1>OpenBibliotheken.nl</h1></br>
+	
 			<div id="manifestfront">
-				<p>
-						De vrijheid van het internet staat onder druk en het (her)gebruiken van auteursrechtelijk beschermd materiaal wordt de consument steeds lastiger gemaakt. Daarnaast wordt ook aan het publieke domein getornd, bijvoorbeeld met verlenging van de termijn van naburige rechten op geluidsdragers met 20 jaar.</p>
-						<p>Deze ontwikkelingen stellen openbare bibliotheken voor een dilemma. Willigen zij de eisen van de uitgevers in en wordt gekozen voor een gereguleerd web, of staan zij pal voor netneutraliteit en daarmee voor vrije toegang tot informatie? OpenBibliotheken wil op kleine schaal een voorbeeld stellen en tonen hoe die vrije toegang eruit ziet. </p>
-						<p>Daarbij benadrukken we dat een eerlijke prijs voor contentmakers ons na aan het hart ligt. OpenBibliotheken is een voorbeeldsite en wil gebruikers niet aanzetten tot onrechtmatig gebruik van content.
-						</p></br>
+				<blockquote>
+					<p>
+					"Here in the digital age, we copy like we breathe" <small>Cory Doctorow</small>
+					</p>
+				</blockquote>
 			</div>
 				<div class="well">
 						<p>
@@ -117,7 +132,7 @@
 											<li><a href="#fotos" id="fotos"><i class="icon-picture"></i> Foto's</a></li>
 										</ul>
 										</div>
-										<input type="text" id="searchField" class="input-large span3 search-query">
+										<input type="text" id="searchField" class="span3 search-query">
 										<button type="submit" id="searchButton" class="btn pull-right">Zoek!</button>								
 									</div>
 								</form>
@@ -143,13 +158,80 @@
 			</div>
 		</div>
 
+		<div class="container" id="contactpage">
+			<div class="row">
+				<div class="span4 offset4 well">
+					<h1>Contactformulier</h1>
+						<p>
+<form enctype="multipart/form-data" method="post" action="http://www.freedback.com/mail.php" accept-charset="UTF-8">
+	<div>
+		<input type="hidden" name="acctid" id="acctid" value="u9tt2pndh11vuxkd" />
+		<input type="hidden" name="formid" id="formid" value="1073648" />
+		<input type="hidden" name="required_vars" id="required_vars" value="name,email" />
+	</div>
+	<table cellspacing="5" cellpadding="5" border="0">
+		<tr>
+			<td class="span2" valign="top">
+				<strong>Naam</strong>
+			</td>
+			<td valign="top">
+				<input type="text" name="name" id="name" size="40" value="" />
+				
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<strong>E-mailadres</strong>
+			</td>
+			<td valign="top">
+				<input type="text" name="email" id="email" size="40" value="" />
+				
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<strong>Bericht</strong>
+			</td>
+			<td valign="top">
+				<textarea name="field-6cb54951fee0a22" id="field-6cb54951fee0a22" rows="6" cols="40"></textarea>
+				
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<button type="submit" class="btn">Verstuur</button>
+			</td>
+		</tr>
+	</table>
+</form>		
+						</p>
+				</div>
+			</div>
+		</div>
+
+
 		
 		<div class="container" id="achtergrondinfopage">
 			<div class="row">
 				<div class="span6 offset3 well">
-					Wie, Wat, Waar
-					Idee
-					Technische uitleg
+					<h2>OpenBibliotheken.nl</h2>
+					<p>
+						De vrijheid van het internet staat onder druk en het (her)gebruiken van auteursrechtelijk beschermd materiaal wordt de consument steeds lastiger gemaakt. Daarnaast wordt ook aan het publieke domein getornd, bijvoorbeeld met verlenging van de termijn van naburige rechten op geluidsdragers met 20 jaar.</p>
+						<p>Deze ontwikkelingen stellen openbare bibliotheken voor een dilemma. Willigen zij de eisen van de uitgevers in en wordt gekozen voor een gereguleerd web, of staan zij pal voor netneutraliteit en daarmee voor vrije toegang tot informatie? OpenBibliotheken wil op kleine schaal een voorbeeld stellen en tonen hoe die vrije toegang eruit ziet. </p>
+						<p>Daarbij benadrukken we dat een eerlijke prijs voor contentmakers ons na aan het hart ligt. OpenBibliotheken is een voorbeeldsite en wil gebruikers niet aanzetten tot onrechtmatig gebruik van content.
+						</p>
+
+						<h3>Vrijwaringsclausule</h3>
+
+						<h4>Aansprakelijkheid</h4>
+						<p>Openbibliotheken.nl geeft geen waarborg voor de nauwkeurigheid of volledigheid van de website. Behoudens voor zover het toepasselijk recht dit vereist, zal Openbibliotheken.nl in geen geval aansprakelijk zijn volgens welke wettelijke regeling dan ook voor iedere bijzondere, indicentele, secundaire, punitieve of morele schadevergoeding voortkomend uit deze vergunning of het gebruik van de website en zijn inhoud. In het bijzonder zal zij niet aansprakelijk zijn voor het volgende: Nauwkeurigheid, volledigheid, enz. van de website of zijn inhoud. Iedere schending van privacy-, publiciteits- of andere rechten. Ieder gebruik door derden dat verder gaat dan kenbaar gemaakt in de gebruiksvoorwaarden.</p>
+
+						<p>Openbibliotheken.nl ontsluit zelf geen documenten of andere media, maar maakt voor de zoekfunctie alleen gebruik van bronnen die vrij toegankelijk zijn op het web. Als u na een zoekactie stuit op bronnen of media die inbreuk maken op het auteursrecht, dan dient u contact op te nemen met de beheerders van de desbetreffende websites zelf.</p>
+
+						<h4>Auteursrecht teksten</h4>
+						<p>Al het tekstuele materiaal op www.openbibliotheken.nl zelf valt onder de GNU/FDL-licentie en de CC-BY-SA-3.0-licentie. Indien u een stuk ziet dat is overgenomen van elders, zonder toestemming van de auteursrechthebbende, meld het dan of verander de tekst zelf. Vermeld a.u.b. wel in de bewerkingssamenvatting de reden van de verandering c.q. verwijdering.</p>
+						
 				</div>
 			</div>
 		</div>
