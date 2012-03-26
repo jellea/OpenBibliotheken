@@ -36,13 +36,12 @@ $(".nav a").click(
 		}
 });
 
-
 // If dropdownmenu option is selected
 $(".dropdown-menu a").click(
 	function() {
 		//change button to selection
 		type = $(this).attr('id');
-		$("#typeButton").html($(this).html());
+		$("#typeButton").html($(this).html()+"  <span class='caret'></span>");
 		$("#typeButton i").addClass("icon-white");
 });
 
