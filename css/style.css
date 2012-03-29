@@ -1,0 +1,39 @@
+body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+			}
+			#photocaption{
+				position: absolute;
+				display: inline-block;
+				width:auto;
+				height:auto;
+				right:30px;
+				bottom: 30px;
+			}
+			#sharebuttons{
+				position: absolute;
+				display: inline-block;
+				width:auto;
+				height:auto;
+				left:30px;
+				bottom: 30px;
+			}
+			#manifestpage p{
+				margin-top:30px;
+				font-size:14px;
+				line-height:22px;
+			}
+
+			.container{
+				display:none;
+			}
+			#zoekpage{
+				max-width: 535px;
+			}
+			#zoekpage h1{
+				line-height: 100px;
+				margin-bottom: 10px;
+			}
+			#logo{
+				text-align:center;
+				margin-bottom: 20px;
+			}
