@@ -26,7 +26,6 @@ window.onload = function(){
 
 $(".nav a").click(
 	function(){
-		console.log($(this).attr('href'));
 		$('.container').hide();
 		$($(this).attr('href')+"page").show();
 		$(".active").removeClass('active');
