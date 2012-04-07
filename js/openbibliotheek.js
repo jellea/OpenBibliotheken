@@ -2,10 +2,11 @@
 var urls = 
 	{"boeken":{"url":"http://en.bookfi.org/s/?q=%"},
 	 "muziek":{"url":"http://grooveshark.com/#!/search?q=%"},
-	 "films":{"url":"https://thepiratebay.se/search/%/0/99/200"},
-	 "bladmuziek":{"url":"http://www.google.com/search?q=site:imslp.org+%"},
+	 "films":{"url":"http://translate.googleusercontent.com/translate_c?hl=nl&ie=UTF8&sl=en&tl=nl&u=http://thepiratebay.se/search/%/0/99/200"},
+	 "bladmuziek":{"url":"https://www.google.com/search?q=site:imslp.org+%"},
 	 "wiki":{"url":"http://nl.wikipedia.org/wiki/Special:Search?search=%"},
-	 "fotos":{"url":"http://www.flickr.com/search/?q=%&l=cc&ct=0&mt=all&adv=1"}
+	 "fotos":{"url":"http://www.flickr.com/search/?q=%&l=cc&ct=0&mt=all&adv=1"},
+	 "piratebay":{"url":"http://translate.googleusercontent.com/translate_c?hl=nl&ie=UTF8&sl=en&tl=nl&u=http://thepiratebay.se/search/%/"}
 	}
 
 
